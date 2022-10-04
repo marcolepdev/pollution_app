@@ -1,0 +1,302 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: grey;
+    background-image: url('../pics/180828102621-air-pollution-shanghai-2018-0223-super-tease.jpg');
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+.external-container {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 550px;
+    height: 90vh;
+    position: relative;
+    top: 5vh;
+    border-radius: .5rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+#title {
+    position: relative;
+    top: 2%;
+    letter-spacing: 0.063rem;
+    text-align: center;
+    font-size: 3.125rem;
+    font-family: montserrat;
+}
+
+.inner-container {
+    width: 100%;
+    height: 85.1%;
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    top: 2.5rem;
+    border-radius: .5rem;
+    font-family: montserrat;
+}
+.Logout-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 2%;
+    left: 43%;
+    text-align: center;
+}
+
+#logout-button {
+    color: #111827;
+    position: relative;
+    font-size: 1rem;
+    padding: 0.65rem 0.65rem;
+    border: none;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.open-search-container {
+    width: 50%;
+    margin: 0 auto;
+    height: 3.125rem;
+    position: inherit;
+    top: 6vh;
+    font-family: montserrat;
+}
+
+.open_close_search {
+    width: 65%;
+    background-color: #171717;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
+    position: inherit;
+    top: 1vh;
+    border-radius: 1.5pt;
+    letter-spacing: 0.063rem;
+    margin: 0 auto;
+    display: block;
+    padding: .55rem 1rem;
+    -webkit-box-shadow: 2px 3px 14px 1px rgba(0,0,0,0.53); 
+box-shadow: 2px 3px 14px 1px rgba(0,0,0,0.53);
+transition: .1s;
+}
+.open_close_search:hover{
+    background-color: #fff;
+    color:#171717;
+}
+
+
+
+.input-container {
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    top: 63px;
+    height: 36px;
+    visibility: hidden;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-evenly;
+    font-family: montserrat;
+}
+
+
+
+input:focus {
+    outline: none;
+}
+
+input {
+    padding: .70rem 1rem 0.60rem 1rem;
+    border-radius: 1.5pt;
+    border: none;
+    background-color: #171717;
+    margin-left: 0.625rem;
+    color: #fff;
+    caret-color: #fff;
+    position: relative;
+    top: 0;
+    letter-spacing: 1px;
+}
+::placeholder, ::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.message-container {
+    width: 60%;
+    height: 6vh;
+    margin: 0 auto;
+    position: relative;
+    top:8%;
+    text-align: center;
+    visibility: hidden;
+}
+
+
+#message{
+    color:#fff;
+    position:relative;
+    top:2.5rem;
+    visibility: hidden;
+    font-family: montserrat;
+}
+
+.data-container{
+    margin:0 auto;
+    background-color:rgb(255, 255, 255, 0.3);
+    width:500px;
+    height:300px;
+    position:relative;
+    top:80px;
+    font-family: montserrat;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.location-container{
+display: block;
+height:50px;
+justify-content: center;
+}
+
+.airpollution{
+    display: block;
+    height:50px;
+    justify-content: center;
+}
+
+#location, #air {
+    text-align: center;
+    position: relative;
+    top:15px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+#part-Ten, #part-Two{
+    padding:0px 10px 0px 10px;
+    text-align: center;
+    position: relative;
+    top:15px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.partTen-container, .partTwo-container{
+display: block;
+height:50px;
+justify-content: center;
+}
+
+
+#button {
+    background-color: #171717; 
+    font-family: montserrat;   
+    letter-spacing: 0.063rem;
+    border: 0;
+    border-radius: 1.5pt;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: .50rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;    
+    -webkit-box-shadow: 2px 3px 14px 1px rgba(0,0,0,0.53); 
+    box-shadow: 2px 3px 14px 1px rgba(0,0,0,0.53);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: .1s;
+}
+
+#button:hover {
+    background-color: #fff;
+    color:#171717;
+}
+
+.button-focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button:focus-visible {
+    box-shadow: none;
+}
+
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 415px) {
+
+    body{
+        height:100vh;
+    }
+    .external-container {
+        width: 92%;
+        margin: 0 auto;
+        height:95vh;
+    }
+
+    .open-search-container{
+        width:60%;
+    }
+    .open_close_search{
+        cursor: pointer;
+    }
+
+    .inner-container {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .Logout-container {
+        position: relative;
+        left: 2px;
+        margin: 0 auto;
+    }
+    .message-container{
+        top:45px;
+    }
+
+    .data-container{
+        width: 80%;
+        top:100px;
+    }
+    #location{
+        font-size: 0.8rem;
+    }
+}
+
+/* IPHONE SE */
+@media only screen and (max-width: 376px){
+    body{
+        height:100vh;
+    }
+    
+
+    .external-container{
+        height:110vh;
+    }
+    
+    #location{
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="it">
+
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/page.css">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="./assets/lodash.js"></script>
+	<title>Air Level</title>
+</head>
+<body>
+	<div class="external-container">
+		<h1 id="title">Air Level</h1>
+
+		<div class="inner-container">
+			<div class="Logout-container">
+				<a id="logout-button" href="">logout</a>
+			</div>
+			<div class="open-search-container">
+					<button class="open_close_search">Search Bar</button>
+			</div>
+			<div class="input-container">
+				<button id="button">Search</button>
+				<input id="city"type="text" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}"
+    			onfocus="if (this.value == '') {this.value = '';}"	placeholder="Milan, London...">
+			</div>
+			
+		<div class="message-container">
+			<p id="message"></p>
+		</div>
+		<div class="data-container">
+			<div class="location-container">
+				<p id="location"></p>
+			</div>
+			<div class="airpollution">
+				<p id="air"></p>
+			</div>
+			<div class="partTen-container">
+				<div id="part-Ten"></div>
+		</div>
+			<div class="partTwo-container">
+				<div id="part-Two"></div>
+		</div>
+
+		</div>
+		</div>
+
+
+	</div>
+		
+	
+	
+	
+	
+
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="./assets/js/site.js"></script>
+
+
+</body>
+
+</html>
