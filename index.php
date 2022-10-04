@@ -56,7 +56,8 @@
 
 
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<script src="./assets/js/site.js"></script>
+	<script src="./assets/js/bars_and_buttons.js"></script>
+	<script src="./assets/js/getdata.js"></script>
 
 
 </body>
