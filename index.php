@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./assets/css/page.css">
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="./assets/lodash.js"></script>
+	<?php include('assets/php/APIkey.php'); ?>
 	<title>Air Level</title>
 </head>
 <body>
