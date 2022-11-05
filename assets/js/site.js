@@ -20,9 +20,11 @@ btn.onclick = async function getData() {
 
     let city = document.querySelector('#city').value;
 
+    const api_key = '';
+
 
     //API CALL  with axios                   
-    axios.get("../json/city.json")
+    axios.get(`https://api.waqi.info/feed/${city}/?token=${api_key}`)
 
         .then(
 
