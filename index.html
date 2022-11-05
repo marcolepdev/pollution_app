@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="./assets/css/page.css">
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="./assets/lodash.js"></script>
-	<?php include('assets/php/APIkey.php'); ?>
 	<title>Air Level</title>
 </head>
 <body>
@@ -20,11 +19,11 @@
 			<div class="open-search-container">
 					<button class="open_close_search">Search Bar</button>
 			</div>
-			<div class="input-container">
-				<button id="button">Search</button>
-				<input id="city"type="text" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}"
+			<form action="CallAPI.php" method="get" class="input-container">
+				<input type="submit" id="button" value="Search">
+				<input name="city" id="city"type="text" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}"
     			onfocus="if (this.value == '') {this.value = '';}"	placeholder="Milan, London...">
-			</div>
+			</form>
 			
 		<div class="message-container">
 			<p id="message"></p>
