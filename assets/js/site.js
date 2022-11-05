@@ -20,17 +20,23 @@ btn.onclick = async function getData() {
 
     let city = document.querySelector('#city').value;
 
-    const api_key = '';
 
-
-    //API CALL  with axios                   
-    axios.get(`https://api.waqi.info/feed/${city}/?token=${api_key}`)
+    //API CALL  with php                
+    fetch(`CallAPI.php?city=${city}`, {
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+})
 
         .then(
 
             async response => {
 
-                let data = await response.data
+                let data = await response.json();
+
+                console.log(data);
                 
 
                 //if the request can't be processed (city is not found)
